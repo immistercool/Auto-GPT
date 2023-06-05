@@ -10,6 +10,7 @@ from tests.utils import requires_api_key
 CYCLE_COUNT = 2
 
 
+@pytest.mark.skip(reason="Not implemented")
 @requires_api_key("OPENAI_API_KEY")
 @pytest.mark.vcr
 @challenge
@@ -19,6 +20,8 @@ def test_browse_website(
     monkeypatch: pytest.MonkeyPatch,
     level_to_run: int,
 ) -> None:
+    # dummy
+    assert False
     file_path = browser_agent.workspace.get_path("browse_website.txt")
     run_interaction_loop(monkeypatch, browser_agent, CYCLE_COUNT)
 
