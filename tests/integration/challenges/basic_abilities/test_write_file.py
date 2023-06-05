@@ -22,6 +22,7 @@ def test_write_file(
     config: Config,
     level_to_run: int,
 ) -> None:
+    assert False
     file_path = str(writer_agent.workspace.get_path("hello_world.txt"))
     run_interaction_loop(monkeypatch, writer_agent, CYCLE_COUNT)
 
