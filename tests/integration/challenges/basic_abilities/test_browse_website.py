@@ -19,6 +19,7 @@ def test_browse_website(
     monkeypatch: pytest.MonkeyPatch,
     level_to_run: int,
 ) -> None:
+    # dummy
     file_path = browser_agent.workspace.get_path("browse_website.txt")
     run_interaction_loop(monkeypatch, browser_agent, CYCLE_COUNT)
 
