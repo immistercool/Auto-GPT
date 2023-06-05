@@ -22,6 +22,7 @@ def test_browse_website(
 ) -> None:
     # dummy
     # dummy
+    # dummy
     assert False
     file_path = browser_agent.workspace.get_path("browse_website.txt")
     run_interaction_loop(monkeypatch, browser_agent, CYCLE_COUNT)
