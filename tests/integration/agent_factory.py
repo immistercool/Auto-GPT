@@ -46,7 +46,7 @@ def browser_agent(agent_test_config, memory_none: NoMemory, workspace: Workspace
         ai_role="an AI designed to use the browse_website command to visit http://books.toscrape.com/catalogue/meditations_33/index.html, answer the question 'What is the price of the book?' and write the price to a file named \"browse_website.txt\", and use the task_complete command to complete the task.",
         ai_goals=[
             "Use the browse_website command to visit http://books.toscrape.com/catalogue/meditations_33/index.html and answer the question 'What is the price of the book?'",
-            'Write the price of the book to a file named "browse_website.txt".',
+            'Write the price of the book to a file named "browse_website.txt"!',
             "Use the task_complete command to complete the task.",
             "Do not use any other commands.",
         ],
