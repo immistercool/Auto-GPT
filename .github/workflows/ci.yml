@@ -157,6 +157,7 @@ jobs:
 
       - id: setup_git_auth
         name: Set up git token authentication
+        if: always() && (startsWith(github.event_name, 'pull_request') || success())
         run: |
           config_key="http.${{ github.server_url }}/.extraheader"
           base64_pat=$(echo -n "pat:${{ secrets.PAT_REVIEW }}" | base64 -w0)
