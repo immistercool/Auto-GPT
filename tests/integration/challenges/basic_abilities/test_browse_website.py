@@ -10,7 +10,6 @@ from tests.utils import requires_api_key
 CYCLE_COUNT = 2
 
 
-@pytest.mark.skip(reason="Not implemented")
 @requires_api_key("OPENAI_API_KEY")
 @pytest.mark.vcr
 @challenge
